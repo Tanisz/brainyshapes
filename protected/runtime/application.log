@@ -567,3 +567,906 @@ Stack trace:
 #17 {main}
 REQUEST_URI=/brainyshapes/index.php?r=site/eredmenyek
 ---
+2017/02/01 15:24:25 [error] [exception.CException] CException: CClientScript and its behaviors do not have a method or closure named "registeredScriptFile". in D:\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\brainyshapes\protected\views\layouts\main.php(1): CComponent->__call('registeredScrip...', Array)
+#1 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#2 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#3 D:\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#4 D:\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 D:\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 D:\yii\framework\web\CBaseController.php(214): COutputProcessor->run()
+#7 D:\yii\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#8 D:\xampp\htdocs\brainyshapes\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#10 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#11 D:\yii\framework\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#12 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(32): CController->render('index')
+#13 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\yii\framework\web\CWebApplication.php(282): CController->run('')
+#18 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#19 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#21 {main}
+REQUEST_URI=/brainyshapes/index.php
+---
+2017/02/01 15:25:01 [error] [php] Missing argument 2 for CClientScript::registerScript(), called in D:\xampp\htdocs\brainyshapes\protected\views\layouts\main.php on line 1 and defined (D:\yii\framework\web\CClientScript.php:682)
+Stack trace:
+#0 D:\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 D:\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#2 D:\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 D:\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 D:\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#5 D:\yii\framework\web\CBaseController.php(308): SiteController->endWidget()
+#6 D:\xampp\htdocs\brainyshapes\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 D:\yii\framework\web\CBaseController.php(126): require()
+#8 D:\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 D:\yii\framework\web\CController.php(784): SiteController->renderFile()
+#10 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(32): SiteController->render()
+#11 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php
+in D:\xampp\htdocs\brainyshapes\protected\views\layouts\main.php (1)
+in D:\xampp\htdocs\brainyshapes\protected\views\layouts\column1.php (6)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (32)
+2017/02/01 15:29:21 [error] [php] Object of class CClientScript could not be converted to string (D:\xampp\htdocs\brainyshapes\protected\views\layouts\main.php:11)
+Stack trace:
+#0 D:\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 D:\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 D:\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 D:\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 D:\yii\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 D:\xampp\htdocs\brainyshapes\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 D:\yii\framework\web\CBaseController.php(126): require()
+#7 D:\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 D:\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(32): SiteController->render()
+#10 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php
+in D:\xampp\htdocs\brainyshapes\protected\views\layouts\main.php (11)
+in D:\xampp\htdocs\brainyshapes\protected\views\layouts\column1.php (6)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (32)
+2017/02/01 16:08:17 [error] [exception.CException] CException: SiteController cannot find the requested view "site/nav". in D:\yii\framework\web\CController.php:878
+Stack trace:
+#0 D:\xampp\htdocs\brainyshapes\protected\views\site\header.php(8): CController->renderPartial('site/nav')
+#1 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#2 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', NULL, true)
+#3 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', NULL, true)
+#4 D:\xampp\htdocs\brainyshapes\protected\views\layouts\generic.php(21): CController->renderPartial('header')
+#5 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#6 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#7 D:\yii\framework\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(66): CController->render('pages/kartyak_l...')
+#9 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionKartyak_leiras()
+#10 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\yii\framework\web\CWebApplication.php(282): CController->run('kartyak_leiras')
+#14 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/kartyak_le...')
+#15 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/kartyak_leiras
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/index
+---
+2017/02/01 16:08:30 [error] [exception.CException] CException: SiteController cannot find the requested view "site/nav". in D:\yii\framework\web\CController.php:878
+Stack trace:
+#0 D:\xampp\htdocs\brainyshapes\protected\views\site\header.php(8): CController->renderPartial('site/nav')
+#1 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#2 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', NULL, true)
+#3 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', NULL, true)
+#4 D:\xampp\htdocs\brainyshapes\protected\views\layouts\generic.php(21): CController->renderPartial('header')
+#5 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#6 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#7 D:\yii\framework\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(66): CController->render('pages/kartyak_l...')
+#9 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionKartyak_leiras()
+#10 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\yii\framework\web\CWebApplication.php(282): CController->run('kartyak_leiras')
+#14 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/kartyak_le...')
+#15 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/kartyak_leiras
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/index
+---
+2017/02/02 11:59:31 [error] [php] Undefined variable: form (D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php:5)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(154): SiteController->render()
+#3 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBelepes()
+#4 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/belepes
+in D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php (5)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (154)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 11:59:34 [error] [php] Undefined variable: form (D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php:5)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(154): SiteController->render()
+#3 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBelepes()
+#4 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/belepes
+in D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php (5)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (154)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 11:59:39 [error] [php] Undefined variable: form (D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php:5)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(154): SiteController->render()
+#3 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBelepes()
+#4 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/belepes
+in D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php (5)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (154)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 12:00:19 [error] [php] Undefined variable: form (D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php:5)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(154): SiteController->render()
+#3 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBelepes()
+#4 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/belepes
+in D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php (5)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (154)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 12:00:24 [error] [php] Undefined variable: form (D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php:5)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(154): SiteController->render()
+#3 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBelepes()
+#4 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/belepes
+in D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php (5)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (154)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 12:00:32 [error] [php] Undefined variable: form (D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php:5)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(154): SiteController->render()
+#3 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBelepes()
+#4 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/belepes
+in D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php (5)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (154)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 12:01:21 [error] [php] Undefined variable: form (D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php:5)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(154): SiteController->render()
+#3 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBelepes()
+#4 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/belepes
+in D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php (5)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (154)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 12:01:29 [error] [php] Undefined variable: form (D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php:5)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(154): SiteController->render()
+#3 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBelepes()
+#4 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/belepes
+in D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php (5)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (154)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 12:01:30 [error] [php] Undefined variable: form (D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php:5)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(154): SiteController->render()
+#3 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBelepes()
+#4 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/belepes
+in D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php (5)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (154)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 12:01:57 [error] [php] Undefined variable: form (D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php:5)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(154): SiteController->render()
+#3 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBelepes()
+#4 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/belepes
+in D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php (5)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (154)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 13:17:28 [error] [exception.CException] CException: SiteController contains improperly nested widget tags in its view "D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php". A CActiveForm widget does not have an endWidget() call. in D:\yii\framework\web\CBaseController.php:101
+Stack trace:
+#0 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#1 D:\yii\framework\web\CController.php(782): CController->renderPartial('belepes', Array, true)
+#2 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(154): CController->render('belepes', Array)
+#3 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBelepes()
+#4 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\yii\framework\web\CWebApplication.php(282): CController->run('belepes')
+#8 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/belepes')
+#9 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/belepes
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/eredmenyek
+---
+2017/02/02 13:39:01 [error] [exception.CException] CException: SiteController cannot find the requested view "registration". in D:\yii\framework\web\CController.php:878
+Stack trace:
+#0 D:\yii\framework\web\CController.php(782): CController->renderPartial('registration', NULL, true)
+#1 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(159): CController->render('registration')
+#2 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#3 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\yii\framework\web\CWebApplication.php(282): CController->run('registration')
+#7 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#8 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/registration
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/belepes
+---
+2017/02/02 13:46:40 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ',' or ')' in D:\xampp\htdocs\brainyshapes\protected\views\site\belepes.php:48
+Stack trace:
+#0 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#1 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#2 D:\yii\framework\web\CController.php(782): CController->renderPartial('belepes', Array, true)
+#3 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(154): CController->render('belepes', Array)
+#4 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBelepes()
+#5 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\yii\framework\web\CWebApplication.php(282): CController->run('belepes')
+#9 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/belepes')
+#10 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/belepes
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/eredmenyek
+---
+2017/02/02 13:53:35 [error] [exception.CException] CException: SiteController cannot find the requested view "registration". in D:\yii\framework\web\CController.php:878
+Stack trace:
+#0 D:\yii\framework\web\CController.php(782): CController->renderPartial('registration', NULL, true)
+#1 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(159): CController->render('registration')
+#2 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#3 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\yii\framework\web\CWebApplication.php(282): CController->run('registration')
+#7 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#8 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/registration
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/belepes
+---
+2017/02/02 13:56:05 [error] [exception.CException] CException: SiteController cannot find the requested view "registration". in D:\yii\framework\web\CController.php:878
+Stack trace:
+#0 D:\yii\framework\web\CController.php(782): CController->renderPartial('registration', NULL, true)
+#1 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(159): CController->render('registration')
+#2 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#3 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\yii\framework\web\CWebApplication.php(282): CController->run('registration')
+#7 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#8 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/registration
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/belepes
+---
+2017/02/02 14:01:13 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ',' or ')' in D:\xampp\htdocs\brainyshapes\protected\views\site\nav.php:18
+Stack trace:
+#0 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', NULL, true)
+#1 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', NULL, true)
+#2 D:\xampp\htdocs\brainyshapes\protected\views\site\header.php(8): CController->renderPartial('nav')
+#3 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#4 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', NULL, true)
+#5 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', NULL, true)
+#6 D:\xampp\htdocs\brainyshapes\protected\views\layouts\main.php(23): CController->renderPartial('header')
+#7 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#8 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#9 D:\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#10 D:\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#11 D:\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#12 D:\yii\framework\web\CBaseController.php(214): COutputProcessor->run()
+#13 D:\yii\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#14 D:\xampp\htdocs\brainyshapes\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#15 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#16 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#17 D:\yii\framework\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#18 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(38): CController->render('index')
+#19 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#20 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#24 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#25 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#27 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/index
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/eredmenyek
+---
+2017/02/02 14:04:20 [error] [exception.CException] CException: Property "CMenu.htmlOption" is not defined. in D:\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('htmlOption', Array)
+#1 D:\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'CMenu', Array)
+#2 D:\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 D:\xampp\htdocs\brainyshapes\protected\views\site\nav.php(16): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', NULL, true)
+#6 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', NULL, true)
+#7 D:\xampp\htdocs\brainyshapes\protected\views\site\header.php(8): CController->renderPartial('nav')
+#8 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#9 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', NULL, true)
+#10 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', NULL, true)
+#11 D:\xampp\htdocs\brainyshapes\protected\views\layouts\main.php(23): CController->renderPartial('header')
+#12 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#16 D:\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#17 D:\yii\framework\web\CBaseController.php(214): COutputProcessor->run()
+#18 D:\yii\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#19 D:\xampp\htdocs\brainyshapes\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#20 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#21 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#22 D:\yii\framework\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#23 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(38): CController->render('index')
+#24 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#25 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#26 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#27 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 D:\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#29 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#30 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#31 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#32 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/index
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/eredmenyek
+---
+2017/02/02 14:22:58 [error] [exception.CException] CException: SiteController cannot find the requested view "registration". in D:\yii\framework\web\CController.php:878
+Stack trace:
+#0 D:\yii\framework\web\CController.php(782): CController->renderPartial('registration', NULL, true)
+#1 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(159): CController->render('registration')
+#2 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#3 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\yii\framework\web\CWebApplication.php(282): CController->run('registration')
+#7 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#8 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/registration
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/belepes
+---
+2017/02/02 14:25:09 [error] [php] Undefined variable: model (D:\xampp\htdocs\brainyshapes\protected\views\site\registration.php:16)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(159): SiteController->render()
+#3 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#4 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/registration
+in D:\xampp\htdocs\brainyshapes\protected\views\site\registration.php (16)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (159)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 14:28:48 [error] [exception.CException] CException: Property "LoginForm.password_again" is not defined. in D:\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('password_again')
+#1 D:\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(LoginForm), 'password_again')
+#2 D:\yii\framework\web\helpers\CHtml.php(1807): CHtml::activeInputField('password', Object(LoginForm), 'password_again', Array)
+#3 D:\yii\framework\web\widgets\CActiveForm.php(838): CHtml::activePasswordField(Object(LoginForm), 'password_again', Array)
+#4 D:\xampp\htdocs\brainyshapes\protected\views\site\registration.php(26): CActiveForm->passwordField(Object(LoginForm), 'password_again')
+#5 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#6 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#7 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#8 D:\yii\framework\web\CController.php(782): CController->renderPartial('registration', Array, true)
+#9 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(161): CController->render('registration', Array)
+#10 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#11 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\yii\framework\web\CWebApplication.php(282): CController->run('registration')
+#15 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#16 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/registration
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/belepes
+---
+2017/02/02 14:38:33 [error] [exception.CException] CException: Property "RegistrationForm.first_name" is not defined. in D:\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('first_name')
+#1 D:\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegistrationForm), 'first_name')
+#2 D:\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegistrationForm), 'first_name', Array)
+#3 D:\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegistrationForm), 'first_name', Array)
+#4 D:\xampp\htdocs\brainyshapes\protected\views\site\registration.php(46): CActiveForm->textField(Object(RegistrationForm), 'first_name')
+#5 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#6 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#7 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#8 D:\yii\framework\web\CController.php(782): CController->renderPartial('registration', Array, true)
+#9 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(175): CController->render('registration', Array)
+#10 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#11 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\yii\framework\web\CWebApplication.php(282): CController->run('registration')
+#15 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#16 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/registration
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/belepes
+---
+2017/02/02 14:40:47 [error] [exception.CException] CException: Property "RegistrationForm.post_code" is not defined. in D:\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('post_code')
+#1 D:\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegistrationForm), 'post_code')
+#2 D:\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegistrationForm), 'post_code', Array)
+#3 D:\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegistrationForm), 'post_code', Array)
+#4 D:\xampp\htdocs\brainyshapes\protected\views\site\registration.php(54): CActiveForm->textField(Object(RegistrationForm), 'post_code')
+#5 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#6 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#7 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#8 D:\yii\framework\web\CController.php(782): CController->renderPartial('registration', Array, true)
+#9 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(175): CController->render('registration', Array)
+#10 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#11 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\yii\framework\web\CWebApplication.php(282): CController->run('registration')
+#15 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#16 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/registration
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/belepes
+---
+2017/02/02 15:01:21 [error] [exception.CException] CException: Property "RegistrationForm.verifyCode" is not defined. in D:\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('verifyCode')
+#1 D:\yii\framework\web\helpers\CHtml.php(1922): CHtml::resolveValue(Object(RegistrationForm), 'verifyCode')
+#2 D:\yii\framework\web\widgets\CActiveForm.php(898): CHtml::activeCheckBox(Object(RegistrationForm), 'verifyCode', Array)
+#3 D:\xampp\htdocs\brainyshapes\protected\views\site\registration.php(99): CActiveForm->checkBox(Object(RegistrationForm), 'verifyCode')
+#4 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\yii\framework\web\CController.php(782): CController->renderPartial('registration', Array, true)
+#8 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(181): CController->render('registration', Array)
+#9 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#10 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\yii\framework\web\CWebApplication.php(282): CController->run('registration')
+#14 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#15 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/registration
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/belepes
+---
+2017/02/02 15:06:20 [error] [exception.CException] CException: CActiveForm and its behaviors do not have a method or closure named "clientValidateAttribute". in D:\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\brainyshapes\protected\views\site\registration.php(99): CComponent->__call('clientValidateA...', Array)
+#1 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#2 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#3 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#4 D:\yii\framework\web\CController.php(782): CController->renderPartial('registration', Array, true)
+#5 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(181): CController->render('registration', Array)
+#6 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#7 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\yii\framework\web\CWebApplication.php(282): CController->run('registration')
+#11 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#12 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#14 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/registration
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/belepes
+---
+2017/02/02 15:29:41 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ',' or ')' in D:\xampp\htdocs\brainyshapes\protected\views\site\registration.php:105
+Stack trace:
+#0 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#1 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#2 D:\yii\framework\web\CController.php(782): CController->renderPartial('registration', Array, true)
+#3 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(181): CController->render('registration', Array)
+#4 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#5 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\yii\framework\web\CWebApplication.php(282): CController->run('registration')
+#9 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#10 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/registration
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/belepes
+---
+2017/02/02 15:37:51 [warning] [application] Failed to set unsafe attribute "first_name" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:37:51 [warning] [application] Failed to set unsafe attribute "last_name" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:37:51 [warning] [application] Failed to set unsafe attribute "zip_code" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:37:51 [warning] [application] Failed to set unsafe attribute "city" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:37:51 [warning] [application] Failed to set unsafe attribute "street" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:37:51 [warning] [application] Failed to set unsafe attribute "hnumber" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:37:51 [warning] [application] Failed to set unsafe attribute "floor" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:37:51 [warning] [application] Failed to set unsafe attribute "fnumber" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:38:45 [warning] [application] Failed to set unsafe attribute "first_name" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:38:45 [warning] [application] Failed to set unsafe attribute "last_name" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:38:45 [warning] [application] Failed to set unsafe attribute "zip_code" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:38:45 [warning] [application] Failed to set unsafe attribute "city" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:38:45 [warning] [application] Failed to set unsafe attribute "street" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:38:45 [warning] [application] Failed to set unsafe attribute "hnumber" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:38:45 [warning] [application] Failed to set unsafe attribute "floor" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:38:45 [warning] [application] Failed to set unsafe attribute "fnumber" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 15:42:52 [error] [exception.CException] CException: A tulajdonság "RegistrationForm.fnumber" nincs definiálva. in D:\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('fnumber')
+#1 D:\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegistrationForm), 'fnumber')
+#2 D:\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegistrationForm), 'fnumber', Array)
+#3 D:\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegistrationForm), 'fnumber', Array)
+#4 D:\xampp\htdocs\brainyshapes\protected\views\site\registration.php(94): CActiveForm->textField(Object(RegistrationForm), 'fnumber')
+#5 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#6 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#7 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#8 D:\yii\framework\web\CController.php(782): CController->renderPartial('registration', Array, true)
+#9 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(181): CController->render('registration', Array)
+#10 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#11 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\yii\framework\web\CWebApplication.php(282): CController->run('registration')
+#15 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#16 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/registration
+---
+2017/02/02 16:39:11 [warning] [application] Failed to set unsafe attribute "first_name" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:39:11 [warning] [application] Failed to set unsafe attribute "last_name" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:39:11 [warning] [application] Failed to set unsafe attribute "zip_code" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:39:11 [warning] [application] Failed to set unsafe attribute "city" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:39:11 [warning] [application] Failed to set unsafe attribute "street" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:39:11 [warning] [application] Failed to set unsafe attribute "hnumber" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:39:11 [warning] [application] Failed to set unsafe attribute "floor" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:39:11 [warning] [application] Failed to set unsafe attribute "dnumber" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:33 [warning] [application] Failed to set unsafe attribute "first_name" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:33 [warning] [application] Failed to set unsafe attribute "last_name" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:33 [warning] [application] Failed to set unsafe attribute "zip_code" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:33 [warning] [application] Failed to set unsafe attribute "city" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:33 [warning] [application] Failed to set unsafe attribute "street" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:33 [warning] [application] Failed to set unsafe attribute "hnumber" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:33 [warning] [application] Failed to set unsafe attribute "floor" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:33 [warning] [application] Failed to set unsafe attribute "dnumber" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:40 [warning] [application] Failed to set unsafe attribute "first_name" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:40 [warning] [application] Failed to set unsafe attribute "last_name" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:40 [warning] [application] Failed to set unsafe attribute "zip_code" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:40 [warning] [application] Failed to set unsafe attribute "city" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:40 [warning] [application] Failed to set unsafe attribute "street" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:40 [warning] [application] Failed to set unsafe attribute "hnumber" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:40 [warning] [application] Failed to set unsafe attribute "floor" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 16:40:40 [warning] [application] Failed to set unsafe attribute "dnumber" of "RegistrationForm".
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (175)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 17:31:52 [error] [exception.CHttpException.404] CHttpException: A rendszer nem találja a "pages" action-t. in D:\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\yii\framework\web\CController.php(270): CController->missingAction('pages')
+#1 D:\yii\framework\web\CWebApplication.php(282): CController->run('pages')
+#2 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pages/eula')
+#3 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/pages/eula
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/registration
+---
+2017/02/02 17:34:31 [error] [exception.CHttpException.404] CHttpException: A rendszer nem találja a "pages" action-t. in D:\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\yii\framework\web\CController.php(270): CController->missingAction('pages')
+#1 D:\yii\framework\web\CWebApplication.php(282): CController->run('pages')
+#2 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pages/eula')
+#3 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/pages/eula
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/registration
+---
+2017/02/02 17:35:02 [error] [exception.CHttpException.404] CHttpException: A rendszer nem találja a "pages" action-t. in D:\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\yii\framework\web\CController.php(270): CController->missingAction('pages')
+#1 D:\yii\framework\web\CWebApplication.php(282): CController->run('pages')
+#2 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pages/eula')
+#3 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/pages/eula
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/registration
+---
+2017/02/02 17:35:16 [error] [exception.CHttpException.404] CHttpException: A rendszer nem találja a "pages" action-t. in D:\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\yii\framework\web\CController.php(270): CController->missingAction('pages')
+#1 D:\yii\framework\web\CWebApplication.php(282): CController->run('pages')
+#2 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pages/eula')
+#3 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/pages/eula
+---
+2017/02/02 17:35:23 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "pages/eula". in D:\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pages/eula')
+#1 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/brainyshapes/index.php?r=pages/eula
+---
+2017/02/02 17:43:39 [error] [exception.CException] CException: A SiteController vezérlő nem találta a(z) "" Nézetet. in D:\yii\framework\web\CController.php:878
+Stack trace:
+#0 D:\xampp\htdocs\brainyshapes\protected\views\site\pages\modal_form.php(41): CController->renderPartial(NULL)
+#1 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#2 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#3 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#4 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(188): CController->renderPartial('pages/modal_for...', Array)
+#5 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEula()
+#6 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\yii\framework\web\CWebApplication.php(282): CController->run('eula')
+#10 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/eula')
+#11 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/eula
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/registration
+---
+2017/02/02 17:43:49 [error] [exception.CException] CException: A SiteController vezérlő nem találta a(z) "" Nézetet. in D:\yii\framework\web\CController.php:878
+Stack trace:
+#0 D:\xampp\htdocs\brainyshapes\protected\views\site\pages\modal_form.php(41): CController->renderPartial(NULL, true)
+#1 D:\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#2 D:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#3 D:\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#4 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(188): CController->renderPartial('pages/modal_for...', Array)
+#5 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEula()
+#6 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\yii\framework\web\CWebApplication.php(282): CController->run('eula')
+#10 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/eula')
+#11 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 D:\xampp\htdocs\brainyshapes\index.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/brainyshapes/index.php?r=site/eula
+HTTP_REFERER=http://localhost/brainyshapes/index.php?r=site/registration
+---
+2017/02/02 17:44:12 [error] [php] strpos() expects parameter 1 to be string, array given (D:\yii\framework\web\CController.php:706)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#1 D:\xampp\htdocs\brainyshapes\protected\views\site\pages\modal_form.php(41): SiteController->renderPartial()
+#2 D:\yii\framework\web\CBaseController.php(126): require()
+#3 D:\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(188): SiteController->renderPartial()
+#6 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEula()
+#7 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#9 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#11 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/eula
+in D:\xampp\htdocs\brainyshapes\protected\views\site\pages\modal_form.php (41)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (188)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 17:44:32 [error] [php] strpos() expects parameter 1 to be string, array given (D:\yii\framework\web\CController.php:706)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#1 D:\xampp\htdocs\brainyshapes\protected\views\site\pages\modal_form.php(41): SiteController->renderPartial()
+#2 D:\yii\framework\web\CBaseController.php(126): require()
+#3 D:\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(188): SiteController->renderPartial()
+#6 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEula()
+#7 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#9 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#11 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/eula
+in D:\xampp\htdocs\brainyshapes\protected\views\site\pages\modal_form.php (41)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (188)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
+2017/02/02 17:44:56 [error] [php] strpos() expects parameter 1 to be string, array given (D:\yii\framework\web\CController.php:706)
+Stack trace:
+#0 D:\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#1 D:\xampp\htdocs\brainyshapes\protected\views\site\pages\modal_form.php(41): SiteController->renderPartial()
+#2 D:\yii\framework\web\CBaseController.php(126): require()
+#3 D:\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 D:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php(188): SiteController->renderPartial()
+#6 D:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEula()
+#7 D:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\yii\framework\web\CController.php(286): SiteController->runAction()
+#9 D:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 D:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#11 D:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 D:\xampp\htdocs\brainyshapes\index.php(15): CWebApplication->run()
+REQUEST_URI=/brainyshapes/index.php?r=site/eula
+in D:\xampp\htdocs\brainyshapes\protected\views\site\pages\modal_form.php (41)
+in D:\xampp\htdocs\brainyshapes\protected\controllers\SiteController.php (188)
+in D:\xampp\htdocs\brainyshapes\index.php (15)
