@@ -3,14 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/brainyshapes/css/main_spatial_generic.css</file>
-            <file>file:/D:/xampp/htdocs/brainyshapes/protected/views/layouts/generic.php</file>
-            <file>file:/D:/xampp/htdocs/brainyshapes/css/main_spatial.css</file>
+            <file>file:/D:/xampp/htdocs/brainyshapes/protected/views/site/pages/eredmenyek.php</file>
             <file>file:/D:/xampp/htdocs/brainyshapes/protected/config/main.php</file>
-            <file>file:/D:/xampp/htdocs/brainyshapes/protected/views/layouts/main.php</file>
+            <file>file:/D:/xampp/htdocs/brainyshapes/protected/views/site/nav.php</file>
+            <file>file:/D:/xampp/htdocs/brainyshapes/protected/controllers/UsersController.php</file>
             <file>file:/D:/xampp/htdocs/brainyshapes/protected/controllers/SiteController.php</file>
-            <file>file:/D:/xampp/htdocs/brainyshapes/protected/views/site/pages/jatekmester_leiras.php</file>
-            <file>file:/D:/xampp/htdocs/brainyshapes/protected/views/site/pages/kartyak_leiras.php</file>
+            <file>file:/D:/xampp/htdocs/brainyshapes/css/table.css</file>
+            <file>file:/D:/xampp/htdocs/brainyshapes/protected/controllers/PaypalController.php</file>
+            <file>file:/D:/xampp/htdocs/brainyshapes/protected/models/Eredmenyek.php</file>
+            <file>file:/D:/xampp/htdocs/brainyshapes/protected/components/Paypal.php</file>
         </group>
     </open-files>
 </project-private>

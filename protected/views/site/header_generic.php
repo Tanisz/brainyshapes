@@ -7,7 +7,7 @@
         </strong>
 
     </h1>
-    <?php $this->renderPartial('nav')?>
+    <?php $this->renderPartial('/site/nav')?>
 </header>
 
 <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>

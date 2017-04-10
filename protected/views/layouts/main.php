@@ -10,9 +10,10 @@
             Yii::app()->clientScript->registerCoreScript('jquery');
             Yii::app()->clientScript->registerCoreScript('jquery.ui');
         ?>
-        
+        <?php Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/bootstrap-mini.css'); ?>
         <?php Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/main_spatial.css'); ?>
         <?php //Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/jquery.min.js', CClientScript::POS_END); ?>
+        <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/bootstrap/js/bootstrap.min.js', CClientScript::POS_END); ?>
         <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/skel.min.js', CClientScript::POS_END); ?>
         <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/util.js', CClientScript::POS_END); ?>
         <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/main.js', CClientScript::POS_END); ?>

@@ -17,11 +17,8 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/bo
     ?>
     <div class="row uniform 50%">
         
-        
-        
-        
         <div class="4u 12u$(xsmall)">
-            <p class="small">A * (csillagozott) mezők kötelezőek!  </p>
+            <p class="small">A * (csillagozott) mezők kitöltése kötelező!  </p>
 
             <?php echo $form->labelEx($model, 'username'); ?>
             <?php echo $form->textField($model, 'username'); ?>
@@ -119,12 +116,12 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/bo
 
         </div>
 
-       <div class="6u 12u$(xsmall)">    
-            <?php echo $form->labelEx($model, 'text'); ?>
-            <?php echo $form->textArea($model, 'text', array('name' => 'messages', 'rows' => 5)); ?>
-            <?php echo $form->error($model, 'text'); ?>
+<!--       <div class="6u 12u$(xsmall)">    
+            <?php //echo $form->labelEx($model, 'text'); ?>
+            <?php //echo $form->textArea($model, 'text', array('rows' => 5)); ?>
+            <?php //echo $form->error($model, 'text'); ?>
 
-        </div>
+        </div>-->
 
       
        <div class="12u 12u$(xsmall)">
@@ -175,7 +172,7 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/bo
         </div> 
     </div>
     <hr>
-    <?php echo CHtml::submitButton('Regisztráció',array('class'=>'special')); ?>
+    <?php echo CHtml::submitButton('Registration',array('class'=>'special')); ?>
     <?php $this->endWidget(); ?>  
 </section>
 

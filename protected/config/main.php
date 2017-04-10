@@ -16,18 +16,23 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+                'application.extensions.*',
+                'application.modules.*',
+                'application.modules.smtpmail.*',
 	),
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'1',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
+                
+                
+		
 	),
 
 	// application components
@@ -37,6 +42,33 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+            
+                'EMailTemplate'=>array(
+                     'class'=>'application.extensions.EMailTemplate.EMailTemplate',
+                ),
+            
+                'Smtpmail'=>array(
+                    'class'=>'application.modules.smtpmail.PHPMailer',
+                    'Host'=>"mail.azigazikincs.hu",
+                    'Username'=>'csiki.istvan@azigazikincs.hu',
+                    'Password'=>'Kaktusz1228',
+                    'Mailer'=>'smtp',
+                    'Port'=>465,
+                    'SMTPAuth'=>true, 
+                    'SMTPSecure' => 'ssl',
+                ),
+                
+                'Paypal' => array(
+			'class'=>'application.components.Paypal',
+			'apiUsername' => 'csiki.istvan_api1.gmail.com',
+			'apiPassword' => 'K4PNVHRSLK9YXYZS',
+			'apiSignature' => 'AiPC9BjkCyDFQXbSkoZcgqH3hpacAZt0TcTfcwntneqPRux9uZGa7DSd',
+			'apiLive' => false,
+			
+			'returnUrl' => 'paypal/confirm/', //regardless of url management component
+			'cancelUrl' => 'paypal/cancel/', //regardless of url management component
+		), 
+            
 
 		// uncomment the following to enable URLs in path-format
 		/*

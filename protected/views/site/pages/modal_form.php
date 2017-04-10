@@ -6,24 +6,10 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/bootstrap/css/
     #myModal {
         top:10%;
     }
-/*    f {
-        color:red;  
-    }*/
-/*    #supplement{
-        font-size: 12px;
-        line-height:normal;
-        opacity: 0.7;
-        margin-left:10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }*/
- 
-
-/*    .modal-dialog{
-        max-width:100%;
-        max-height: 100%;
-    }*/
-
+    .modal-body{
+        height: 500px;
+        overflow-y: auto;
+    }
     .modal-content {
         padding:9px 15px;
         border-bottom:1px solid #eee;
@@ -39,6 +25,20 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/bootstrap/css/
         font-size: 12px;
         line-height:normal;
     }
+
+    .modal-body::-webkit-scrollbar {
+        width: 1em;
+    }
+
+    .modal-body::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+
+    .modal-body::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+    }
+
 </style>
 
 <div class="se-pre-con"></div>

@@ -1664,7 +1664,8 @@
 		}
 
 	strong, b {
-		color: #484848;
+                color: #ff8c00;
+		/*color: #484848;*/
 		font-weight: 700;
 	}
 

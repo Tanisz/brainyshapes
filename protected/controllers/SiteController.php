@@ -29,7 +29,7 @@ class SiteController extends Controller {
     protected function beforeAction($action) {
         if (!parent::beforeAction($action))
             return false;
-        $this->setPageTitle(CHtml::encode('Brainy Shapes'));
+            $this->setPageTitle(CHtml::encode('Brainy Shapes'));
 
         return true;
     }
@@ -76,7 +76,20 @@ class SiteController extends Controller {
 
     public function actionEredmenyek() {
         $this->layout = 'generic';
-        $this->render('pages/eredmenyek');
+        
+        $dataProvider=new CActiveDataProvider('eredmenyek', array(
+			/*'pagination'=>array(
+				'pageSize'=>Yii::app()->params['pageSize'],
+				'pageVar'=>'page',
+			),*/
+                        'pagination'=>false,
+                        //'pagination'=>array('pageSize'=>10,),
+			'sort'=>array(
+				'defaultOrder'=>'pontszam desc',
+			),
+		));
+        
+        $this->render('pages/eredmenyek',array('dataProvider'=>$dataProvider));
     }
 
     /**
@@ -139,10 +152,14 @@ class SiteController extends Controller {
     }
     
     
-    public function actionBelepes() {
+    public function actionBelepes($username = null) {
         $this->layout = 'generic';
         $model = new LoginForm;
-
+        
+        if ($username !== null) {
+            $model->username = $username;
+        }
+        
         // if it is ajax validation request
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
             echo CActiveForm::validate($model);
@@ -172,15 +189,75 @@ class SiteController extends Controller {
 
         // collect user input data
         if (isset($_POST['RegistrationForm'])) {
+            //echo Yii::trace(CVarDumper::dumpAsString($model), 'actionRegistration');
             $model->attributes = $_POST['RegistrationForm'];
+            echo Yii::trace(CVarDumper::dumpAsString($model), 'actionRegistration');
+            $psw = $model->password;
+            $psw_again = $model->password_again;
+            $model->activation_code = $model->generateActivationCode($model->email);
+            $model->password = IdentityTools::CryptPassword($model->password);
+            $model->password_again = $model->password;
+
+            echo Yii::trace(CVarDumper::dumpAsString($model), 'actionReg');
+            if ($model->registration()) {
+                //echo Yii::trace(CVarDumper::dumpAsString($model), 'actionReg2');
+                $eredmeny = Tools::SendMail('activation',$model->email);
+                $this->redirect(array('/site/RegSucces', 'username' => $model->email, 'maileredmeny' => $eredmeny));
+            } else {
+                echo Yii::trace(CVarDumper::dumpAsString('save under'), 'actionReg3');
+                $model->password = $psw;
+                $model->password_again = $psw_again;
+            }
             // validate user input and redirect to the previous page if valid
-            if ($model->validate() && $model->login())
-                $this->redirect(Yii::app()->user->returnUrl);
+            /*if ($model->validate() && $model->login())
+                $this->redirect(Yii::app()->user->returnUrl);*/
         }
         
         $this->render('registration',array('model' => $model) );
      }  
      
+    public function actionRegSucces($username = null, $maileredmeny = null) {
+        $this->layout = 'generic';
+        $this->render('success', array('model' => $username, 'maileredmeny' => $maileredmeny));
+        Yii::app()->end();
+    }
+    
+    public function actionActivate() {
+        $this->layout = 'generic';
+        echo Yii::trace(CVarDumper::dumpAsString('actionActivate'), 'actionActivate');
+        $model = new Users;
+
+        //echo Yii::trace(CVarDumper::dumpAsString($model), 'actionActivate');
+        if (isset($_GET['key'])) {
+
+            $activationcode = $_GET['key'];
+            //echo Yii::trace(CVarDumper::dumpAsString($activationcode), 'actionActivate');
+            if (isset($activationcode)) {
+                //echo Yii::trace(CVarDumper::dumpAsString('1'), 'actionActivate');
+                $model = Users::model()->findByAttributes(array('activation_code' => $activationcode));
+                //echo Yii::trace(CVarDumper::dumpAsString($model), 'actionActivate2');
+                if ($model !== null) {
+                    //echo Yii::trace(CVarDumper::dumpAsString($model), 'actionActivate3');
+                    if ($model->activate == '0') {
+                        $model->activate = '1';
+                        /*ez azért muszáj, mert a $password_again is required*/
+                        //$model->password_again = $model->password;
+                        if ($model->save()) {
+                            //echo Yii::trace(CVarDumper::dumpAsString($model), 'actionActivateSave');
+                            $eredmeny = Tools::SendMail('registration',$model->email);
+                            Yii::app()->user->setFlash('activate', 'Thank you for register with us!');
+                        } else
+                            Yii::app()->user->setFlash('activate', 'This somthing wrong, pleas try again!');
+                    } else
+                        Yii::app()->user->setFlash('activate', 'You have been activated the password!');
+                } else
+                    Yii::app()->user->setFlash('activate', 'This wrong activation code!');
+            }
+        } else
+            Yii::app()->user->setFlash('activate', 'This wrong!');
+
+        $this->render('activate', array('model' => $model));
+    }
      
      public function actionEula() {
         //$this->layout = 'generic';
@@ -195,5 +272,7 @@ class SiteController extends Controller {
         Yii::app()->user->logout();
         $this->redirect(Yii::app()->homeUrl);
     }
-
+    
+    
+    
 }

@@ -2879,7 +2879,7 @@ background-color: #202020;
 						}
 
 					#header nav ul li:first-child {
-						margin-left: 0;
+						/*margin-left: 0;*/
 					}
 
 					#header nav ul li .button {
@@ -3342,4 +3342,7 @@ background-color: #202020;
             color: gray;
         }
 
-        
+#main_data {
+  color : #f44066;
+  text-transform: uppercase;
+}
